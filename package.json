@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "sass": "^1.56.1"
+  },
+  "name": "oh-my-food",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile": "sass scss/main.scss css/main.css --watch",
+    "compile": "sass scss/menu.scss css/menu.css --watch"
+ },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TychInDev/Oh-My-Food.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TychInDev/Oh-My-Food/issues"
+  },
+  "homepage": "https://github.com/TychInDev/Oh-My-Food#readme",
+  "description": ""
+}

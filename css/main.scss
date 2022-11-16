@@ -1,0 +1,221 @@
+$main-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+
+* {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1,
+h4 {
+  font-family: "Shrikhand", cursive;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/*********** HEADER ************/
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+    border-top: 2px solid #cccccc;
+    width: 100%;
+    height: 3em;
+  }
+  span {
+    margin-left: 1em;
+  }
+}
+
+/*********** INFO OH MY FOOD ************/
+
+#info-ohmyfood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 2em;
+
+  .text-info {
+    text-align: center;
+    width: 75%;
+  }
+
+  a {
+    width: fit-content;
+    align-items: center;
+    background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
+    border-radius: 28px;
+    color: #ffffff;
+    padding: 16px 31px;
+    font-weight: 700;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+
+  }
+}
+
+/*********** FONCTIONNEMENT ************/
+
+#how-ohmyfood {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: 12%;
+    margin-bottom: 16px;
+    padding: 1em;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  i {
+    font-size: 24px;
+    margin-right: 1em;
+    margin-left: 0.5em;
+  }
+
+  p {
+    font-size: 20px;
+    padding-left: 1em;
+  }
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 1rem;
+  height: 1rem;
+  top: 30%;
+  color: #fff;
+  position: absolute;
+  left: -1em;
+  background: #9356dc;
+  border-radius: 100px;
+}
+
+/*********** RESTAURANT ************/
+
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 2em;
+  .card-restaurant {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  img {
+    width: 100%;
+    height: 11em;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .new {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 8px;
+    color: #288364;
+    background: #99e2d0;
+    border-radius: 5px;
+  }
+  .restaurant-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    position: relative;
+    
+  }
+  .restaurant-info h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .restaurant-info p {
+    margin-top: 0;
+    font-weight: 200;
+  }
+  .restaurant-info i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    right: 1em;
+    background: #fff;
+  }
+
+  .restaurant-info i:hover {
+    color: #9356dc;
+    transition-duration: 0.3s;
+  }
+
+  .fa-heart {
+    font-size: 1.75rem;
+  }
+}
+
+/*********** FOOTER ************/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+
+  h4 {
+    color: white;
+    margin-left: 1em;
+    font-size: 28px;
+  }
+  ul {
+    margin-top: -1em;
+  }
+  li {
+    list-style-type: none;
+    color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  i {
+    margin-right: 1rem;
+  }
+}
