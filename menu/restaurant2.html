@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Restaurant - La note enchantée à Charonne</title>
+    <title>La note enchantée à Charonne</title>
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/css/menu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -13,105 +14,219 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <!----------- HEADER ------------>
-      <header>
-        <img src="/images/logo/ohmyfood.png" alt="logo OhMyFood" />
+    <header>
+      <h1>
         <a href="/index.html"><i class="fa-arrow-left fa-solid"></i></a>
-      </header>
+        ohmyfood
+      </h1>
+    </header>
 
-      <!----------- RESTAURANT ------------>
-      <img src="/images/restaurants/restaurant2 - la note enchantee.jpg" alt="Restaurant - La note enchantée à Charonne" />
-      <section id="menu">
-        <div class="card-restaurant">
-          <h2>La note enchantée <i class="fa-heart fa-regular"></i></h2>
+    <!-- PHOTO DU RESTAURANT -->
+    <div class="menu">
+      <img
+        src="/images/restaurants/restaurant2_la_note_enchantee.jpg"
+        alt="Photo du restaurant La palette du goût situé à Charonne"
+      />
+    </div>
 
-          <div class="starter-food">
-            <h3>ENTRÉES</h3>
-            <div class="info-food">
-              <h4>Ravioles de foie gras</h4>
-              <p>Accompagnés de leur crème à la truffe</p>
-              <span>25€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-            <div class="info-food">
-              <h4>Caviar osciètre</h4>
-              <p>Sur blini à la farine de blé noir</p>
-              <span>35€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-            <div class="info-food">
-              <h4>Homard et espuma de potiron</h4>
-              <p>Mariné aux zestes d'orange</p>
-              <span>20€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-            <div class="info-food">
-              <h4>Foie gras de canard cuit entier</h4>
-              <p>Confiture de figue et pain toasté</p>
-              <span>35€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
+    <!-- MENU DU RESTAURANT -->
+
+    <div class="restaurant-title">
+      <h1>La note enchantée</h1>
+      <div>
+        <i class="fa-regular fa-heart"></i>
+      </div>
+    </div>
+    <!-- ENTREES -->
+
+    <section class="group-food">
+      <h2>Entrées</h2>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Raviole de foie gras</h3>
+            <p>Accompagnées de leur crème à la truffe</p>
           </div>
-          <div class="main-food">
-            <h3>PLATS</h3>
-
-            <div class="info-food">
-              <h4>Noix de coquilles Saint-Jacques</h4>
-              <p>Sur lit de purée de céleri-rave</p>
-              <span>40€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-            <div class="info-food">
-              <h4>Langoustine poêlée</h4>
-              <p>Purée de patate douce</p>
-              <span>35€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-            <div class="info-food">
-              <h4>Mijoté de queue de boeuf</h4>
-              <p>Et riz sauvage aux zestes de citron</p>
-              <span>44€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-          </div>
-          <div class="dessert-food">
-            <h3>DESSERTS</h3>
-            <div class="info-food">
-              <h4>Macaron noisette et chocolat</h4>
-              <p>Glace au caramel brun et sel de Guérande</p>
-              <span>18€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-            <div class="info-food">
-              <h4>Baba au rhum revisité</h4>
-              <p>Avec son coulis de citron</p>
-              <span>22€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
-            <div class="info-food">
-              <h4>Tarte au citron meringuée</h4>
-              <p>Déstructurée</p>
-              <span>23€</span>
-              <i class="fa-circle-check fa-regular"></i>
-            </div>
+          <div class="food-price">
+            <p>25€</p>
           </div>
         </div>
-        <a href="#">Commander</a>
-      </section>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
 
-      <!----------- FOOTER ------------>
-      <footer>
-        <img src="/images/logo/ohmyfood@2x.svg" alt="logo footer" />
-        <ul>
-          <li><a href="#">Proposer un restaurant</a></li>
-          <li><a href="#">Devenir partenaire</a></li>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="mailto:hello@openclassrooms.com">Contact</a></li>
-        </ul>
-      </footer>
-    </main>
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Caviar osciètre</h3>
+            <p>Sur blini a la farine de blé noir</p>
+          </div>
+          <div class="food-price">
+            <p>35€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Homard et espuma de potiron</h3>
+            <p>Mariné aux zestes d'orange</p>
+          </div>
+          <div class="food-price">
+            <p>20€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Foie gras de canard cuit entier</h3>
+            <p>Confiture de figue et pain toasté</p>
+          </div>
+          <div class="food-price">
+            <p>35€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATS -->
+
+    <section class="group-food">
+      <h2>Plats</h2>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Noix de coquilles Saint-Jacques</h3>
+            <p>Sur lit de purée de céleri-rave</p>
+          </div>
+          <div class="food-price">
+            <p>40€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Langoustine poêlée</h3>
+            <p>Purée de patate douce</p>
+          </div>
+          <div class="food-price">
+            <p>35€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Mijoté de queue de boeuf</h3>
+            <p>Et riz sauvage aux zestes de citron</p>
+          </div>
+          <div class="food-price">
+            <p>44€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+    </section>
+    <!-- DESSERTS -->
+    <section class="group-food">
+      <h2>Desserts</h2>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Macaron noisette et chocolat</h3>
+            <p>Glace au caramel brun et sel de Guérande</p>
+          </div>
+          <div class="food-price">
+            <p>18€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Baba au rhum revisité</h3>
+            <p>Avec son coulis de citron</p>
+          </div>
+          <div class="food-price">
+            <p>22€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+
+      <div class="card-food">
+        <div class="food-details">
+          <div>
+            <h3>Tarte au citron meringuée</h3>
+            <p>Déstructurée</p>
+          </div>
+          <div class="food-price">
+            <p>23€</p>
+          </div>
+        </div>
+        <div class="food-icons">
+          <i class="fa-solid fa-circle-check starter__check"></i>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <h4>ohmyfood</h4>
+      <ul>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-handshake fa-solid"></i>Devenir partenaire</a
+          >
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:hello@openclassrooms.com">Contact</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

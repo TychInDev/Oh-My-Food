@@ -1,6 +1,7 @@
 * {
   margin-right: 0;
   margin-left: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -15,26 +16,95 @@ header {
 header a {
   text-decoration: none;
   color: black;
-  margin-right: 4em;
-}
-
-/*********** IMAGE RESTAURANT ************/
-img {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+  margin-right: 3.5em;
+  margin-left: 1em;
 }
 
 /*********** MENU RESTAURANT ************/
-#menu {
-  background-color: #f2f2f2;
-}
-#menu img {
+img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+  position: relative;
   z-index: 1;
 }
-#menu .card-restaurant {
-  position: relative;
+
+.restaurant-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  margin-top: -4em;
   z-index: 2;
+  background-color: white;
+  width: 100%;
+  border-radius: 35px;
+}
+.restaurant-title h1 {
+  font-size: 2em;
+  text-align: left;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.restaurant-title div {
+  margin-left: auto;
+  font-size: 2em;
+  margin-right: 1em;
+}
+
+.group-food {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 2em;
+}
+.group-food h2 {
+  text-align: left;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-bottom: 3px solid #99E2D0;
+  width: 1.5em;
+}
+
+.card-food {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+.card-food h3, .card-food p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.card-food p {
+  margin-top: -0.5em;
+}
+.card-food i {
+  margin-right: 1em;
+}
+.card-food .food-details {
+  display: flex;
+  justify-content: flex-start;
+}
+.card-food .food-price {
+  display: flex;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 1em;
+}
+
+.food-icons {
+  display: none;
 }
 
 /*********** FOOTER ************/

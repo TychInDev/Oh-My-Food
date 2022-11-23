@@ -99,6 +99,10 @@ header span {
   font-size: 20px;
   padding-left: 1em;
 }
+#how-ohmyfood :hover {
+  color: #9356dc;
+  opacity: 6;
+}
 
 .number {
   display: flex;
@@ -171,8 +175,9 @@ header span {
   background: #fff;
 }
 #restaurants .restaurant-info i:hover {
-  color: #9356dc;
-  transition-duration: 0.3s;
+  background-clip: text;
+  -webkit-text-fill-color: #9356dc;
+  transition-duration: 0.5s;
 }
 #restaurants .fa-heart {
   font-size: 1.75rem;

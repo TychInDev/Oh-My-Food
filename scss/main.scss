@@ -108,6 +108,10 @@ header {
     font-size: 20px;
     padding-left: 1em;
   }
+  :hover {
+    color: #9356dc;
+    opacity: 6;
+  }
 }
 
 .number {
@@ -182,9 +186,10 @@ header {
     background: #fff;
   }
 
-  .restaurant-info i:hover {
-    color: #9356dc;
-    transition-duration: 0.3s;
+  .restaurant-info i:hover{
+    background-clip: text;
+    -webkit-text-fill-color: #9356dc;
+    transition-duration: 0.5s;
   }
 
   .fa-heart {
