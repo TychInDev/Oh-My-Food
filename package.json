@@ -7,7 +7,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "compile": "sass scss/main.scss:css/main.css scss/menu.scss:css/menu.css --watch"
+    "compile": "sass sass/main.scss:css/main.css sass/menu.scss:css/menu.css --watch"
  },
  
     
