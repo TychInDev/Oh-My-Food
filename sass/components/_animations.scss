@@ -1,0 +1,218 @@
+/** BOUTON J'AIME **/
+
+.like-button i {
+    position: absolute;
+    font-size: 2em;
+    right: 1rem;
+    cursor: pointer;
+  }
+  .like-button .like {
+    opacity: 0;
+    background-image: linear-gradient(250deg, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  }
+  .like-button:hover .like {
+    opacity: 1;
+    animation: heart 0.5s linear;
+  }
+  
+  @keyframes heart {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+/** APPARITION DES MENUS **/
+.group-food1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 2em;
+  animation: slide-top 1s ease-in 1s reverse both;
+  opacity: 0;
+}
+.group-food2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 2em;
+  animation: slide-top 1s ease-in 2s reverse both ;
+  opacity: 0;
+}
+.group-food3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 2em;
+  animation: slide-top 1s ease-in 3s reverse both;
+  opacity: 0;
+}
+
+.group-food1 h2  {
+  text-align: left;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-bottom: 3px solid #99E2D0;
+  width: 1.5em;
+}
+.group-food2 h2  {
+  text-align: left;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-bottom: 3px solid #99E2D0;
+  width: 1.5em;
+}
+.group-food3 h2  {
+  text-align: left;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-bottom: 3px solid #99E2D0;
+  width: 1.5em;
+}
+
+.card-food {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  animation: slide-top 1s ease-in 2s reverse both;
+}
+.card-food h3, .card-food p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+.card-food p {
+  margin-top: -0.5em;
+}
+.card-food i {
+  margin-right: 1em;
+}
+.card-food .food-details {
+  display: flex;
+  justify-content: flex-start;
+}
+.card-food .food-price {
+  display: flex;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 1em;
+}
+
+.food-icons {
+  display: none;
+}
+
+.delay1 {
+  animation-delay: 1.5s;
+}
+.delay2 {
+  animation-delay: 2.5s;
+}
+.delay3 {
+  animation-delay: 4s;
+}
+
+
+/** ANIMATION ADD TO CART **/
+
+.card-food {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    height: 5em;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px 15px #CACACA;
+   
+  }
+  
+  .card-food:hover {
+    cursor: pointer;
+  }
+  
+  .food-price {
+    display:flex;
+    align-items: flex-end;
+    padding-right: 4em;
+    margin-bottom: 1em;
+  }
+  
+  .food-details {
+    display:flex; 
+    flex-direction: column;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left:1em;
+  }
+  
+  h3 {
+    margin-bottom: -16px;
+  }
+  
+  p {
+    margin-top: 1.5rem;
+  }
+  
+  .food-icons { 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    margin-right: -4em;
+    font-size: 1.5em;
+    background-color: #99E2D0;
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .fa-solid {
+    color: white;
+  }
+  
+  @-webkit-keyframes add-cart {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes add-cart {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .card-food:hover .fa-solid{
+  animation: add-cart  1s ease 0s 1 alternate-reverse forwards;
+  }
+  
+  
+  .card-food:hover .food-icons{
+    margin-right:0;
+    transition: margin-right 600ms;
+  }

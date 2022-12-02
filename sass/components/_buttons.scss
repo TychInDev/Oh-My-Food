@@ -1,0 +1,19 @@
+.button {
+  text-decoration: none;
+  width: fit-content;
+  align-items: center;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 16px 31px;
+  font-weight: 600;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  background: linear-gradient(
+    to bottom,
+    #ff79da,
+    #e86edb,
+    #cf64dc,
+    #b35cdc,
+    #9356dc
+  );
+}

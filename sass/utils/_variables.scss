@@ -1,6 +1,21 @@
+/** SCREEN SIZE **/
+
+$screen-desktop: 1200px;
+$screen-tablet: 992px;
+
 /** COLORS **/
+
+$main-color: #9356dc;
+$how-color: rgba(147, 86, 220, 0.2);
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$background-color: #f2f2f2;
 
 /** FONTS **/
 
+$font-title: 'Shrikhand', cursive;
+$font-body: 'Roboto', sans-serif;
+
 /** SHADOW **/
 
+$shadow-box: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);

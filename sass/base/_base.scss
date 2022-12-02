@@ -1,8 +1,20 @@
 /** PRIMARY RULES **/
+* {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
 
-/** SECONDARY RULES **/
+/** FONT RULES **/
 
-/** SPACING RULES **/
+body {
+    font-family: $font-body;
+}
 
-/** TITLE RULES **/
+h1, h4 {
+    font-family: $font-title;
+}
 
+a {
+    text-decoration: none;
+}

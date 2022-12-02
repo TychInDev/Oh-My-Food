@@ -21,6 +21,58 @@ span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+body {
+  overflow: hidden;
+}
+
+main {
+  overflow: scroll;
+  height: 100vh;
+}
+
+.pre-loader {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  background: white;
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  animation: preloader 0.2s linear 3s forwards; 
+  z-index: 1;
+}
+.loading-circle {
+  width: 10em;
+  height: 10em;
+  display: inline-block;
+  border: 16px solid #F2F2F2;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #99E2D0;
+  border-radius: 50%;
+  animation: loadingcircle 2s linear infinite;
+}
+
+@keyframes preloader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loadingcircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*********** HEADER ************/
 
 header {
@@ -175,27 +227,41 @@ header {
     margin-top: 0;
     font-weight: 200;
   }
-  .restaurant-info i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2em;
-    height: 2em;
-    position: absolute;
-    right: 1em;
-    background: #fff;
-  }
+}
 
   .restaurant-info i:hover{
     background-clip: text;
-    -webkit-text-fill-color: #9356dc;
+    -webkit-text-fill-color: linear-gradient(25Odeg, #9356dc, #ff79da);
     transition-duration: 0.5s;
-  }
+  } 
 
-  .fa-heart {
-    font-size: 1.75rem;
+  .like-button i {
+    position: absolute;
+    font-size: 2em;
+    right: 1rem;
+    margin-top: -15%;
+    cursor: pointer;
   }
-}
+  .like-button .like {
+    opacity: 0;
+    background-image: linear-gradient(250deg, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  }
+  .like-button:hover .like {
+    opacity: 1;
+    animation: heart 0.5s linear;
+  }
+  
+  @keyframes heart {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 /*********** FOOTER ************/
 
