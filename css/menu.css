@@ -1,26 +1,104 @@
+/** SCREEN SIZE **/
+/** COLORS **/
+/** FONTS **/
+/** SHADOW **/
+/** PRIMARY RULES **/
 * {
-  margin-right: 0;
   margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+/** FONT RULES **/
+h1, h4 {
   font-family: "Shrikhand", cursive;
 }
 
-/*********** HEADER ************/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  text-decoration: none;
+  width: fit-content;
+  align-items: center;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 16px 31px;
+  font-weight: 600;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+}
+
 header {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+header h1 {
+  margin-left: auto;
+  margin-right: auto;
 }
 header a {
   text-decoration: none;
   color: black;
-  margin-right: 3.5em;
-  margin-left: 1em;
+  font-size: 2.5em;
+  margin-left: 16px;
 }
 
-/*********** MENU RESTAURANT ************/
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4em;
+  }
+  .search-box {
+    font-size: larger;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+}
+footer h4 {
+  color: white;
+  margin-left: 1em;
+  font-size: 2em;
+}
+footer ul {
+  margin-top: -1em;
+}
+footer li {
+  list-style: none;
+  color: white;
+  font-size: 1.3em;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer i {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  footer h4 {
+    font-size: 4em;
+  }
+  footer ul {
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+  }
+}
 img {
   width: 100%;
   height: 20em;
@@ -33,7 +111,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute;
+  position: relative;
   margin-top: -4em;
   z-index: 2;
   background-color: white;
@@ -52,85 +130,233 @@ img {
   margin-right: 1em;
 }
 
-.group-food {
+.group-food1 {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
   flex-direction: column;
   margin-top: 2em;
+  animation: slide-top 1s ease-in 1s reverse both;
+  opacity: 0;
 }
-.group-food h2 {
+
+.group-food2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 2em;
+  animation: slide-top 1s ease-in 2s reverse both;
+  opacity: 0;
+}
+
+.group-food3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  margin-top: 2em;
+  animation: slide-top 1s ease-in 3s reverse both;
+  opacity: 0;
+}
+
+h2 {
   text-align: left;
   font-size: 1.5em;
   margin-top: 1em;
   margin-left: 1em;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 6px solid #99e2d0;
   width: 1.5em;
 }
 
 .card-food {
   display: flex;
-  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
   width: 90%;
+  height: 6em;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 10px;
-  line-height: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1em;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  animation: slide-top 1s ease-in 3s reverse both;
 }
-.card-food h3, .card-food p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
+.card-food h3 {
+  font-size: 1.5em;
 }
 .card-food p {
-  margin-top: -0.5em;
+  margin-top: -16px;
+  font-size: larger;
 }
-.card-food i {
-  margin-right: 1em;
+.card-food:hover {
+  cursor: pointer;
 }
 .card-food .food-details {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 1em;
 }
 .card-food .food-price {
-  display: flex;
   margin-left: auto;
-  margin-top: auto;
   margin-right: 1em;
+  margin-top: auto;
 }
-
-.food-icons {
-  display: none;
+.card-food .fa-circle-check {
+  color: white;
 }
-
-/*********** FOOTER ************/
-footer {
+.card-food .food-icons {
   display: flex;
-  flex-direction: column;
-  background-color: #353535;
+  justify-content: center;
+  align-items: center;
+  width: 4em;
+  margin-right: -4em;
+  font-size: 1.5em;
+  background-color: #99e2d0;
+  transition: all 0.7s ease-in-out;
 }
-footer h4 {
-  color: white;
-  margin-left: 1em;
-  font-size: 28px;
+
+.card-food:hover .fa-circle-check {
+  animation: add-cart 1s ease 0s 1 alternate-reverse forwards;
 }
-footer ul {
-  margin-top: -1em;
+
+.card-food:hover .food-icons {
+  margin-right: 0;
+  transition: margin-right 600ms;
 }
-footer li {
-  list-style-type: none;
-  color: white;
+
+.delay1 {
+  animation-delay: 1.5s;
 }
-footer a {
-  color: white;
+
+.delay2 {
+  animation-delay: 2.5s;
+}
+
+.delay3 {
+  animation-delay: 4s;
+}
+
+.delay4 {
+  animation-delay: 5s;
+}
+
+.button {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
   text-decoration: none;
+  width: fit-content;
+  height: auto;
+  align-items: center;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 16px 31px;
+  font-weight: 600;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
-footer i {
+
+/** LIKE **/
+.like-button i {
+  position: absolute;
   margin-right: 1rem;
+  margin-top: -1rem;
+  font-size: 1.5em;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.like-button .like {
+  opacity: 0;
+  background-image: linear-gradient(250deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+.like-button:hover .like {
+  opacity: 1;
+  animation: heart 0.5s linear;
+}
+
+@media screen and (min-width: 992px) {
+  .restaurant {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  img {
+    height: 30em;
+  }
+  .button {
+    font-size: 2em;
+  }
+}
+/** BOUTON J'AIME **/
+@keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/** APPARITION DES MENUS **/
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+/** ANIMATION ADD TO CART **/
+@-webkit-keyframes add-cart {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes add-cart {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

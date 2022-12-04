@@ -1,32 +1,23 @@
+/** SCREEN SIZE **/
+/** COLORS **/
+/** FONTS **/
+/** SHADOW **/
+/** PRIMARY RULES **/
 * {
-  max-width: 100%;
   margin-left: 0;
   margin-right: 0;
+  max-width: 100%;
   font-family: "Roboto", sans-serif;
+}
+
+/** FONT RULES **/
+h1, h4 {
+  font-family: "Shrikhand", cursive;
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-h1,
-h4 {
-  font-family: "Shrikhand", cursive;
-}
-
-span {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-
-body {
-  overflow: hidden;
-}
-
-main {
-  overflow: scroll;
-  height: 100vh;
 }
 
 .pre-loader {
@@ -71,7 +62,19 @@ main {
     transform: rotate(360deg);
   }
 }
-/*********** HEADER ************/
+.button {
+  text-decoration: none;
+  width: fit-content;
+  align-items: center;
+  border-radius: 28px;
+  color: #ffffff;
+  padding: 16px 31px;
+  font-weight: 600;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -87,8 +90,76 @@ header .search-box {
   width: 100%;
   height: 3em;
 }
-header span {
+header .search-box h1 {
+  font-size: 2.5em;
+}
+header .search-box span {
   margin-left: 1em;
+  font-size: 1.2em;
+  color: black;
+}
+header .search-box i {
+  font-size: 1em;
+  color: black;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4em;
+  }
+  .search-box {
+    font-size: larger;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+}
+footer h4 {
+  color: white;
+  margin-left: 1em;
+  font-size: 2em;
+}
+footer ul {
+  margin-top: -1em;
+}
+footer li {
+  list-style: none;
+  color: white;
+  font-size: 1.3em;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer i {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  footer h4 {
+    font-size: 4em;
+  }
+  footer ul {
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+  }
+}
+body {
+  overflow: hidden;
+}
+
+main {
+  overflow: scroll;
+  height: 100vh;
 }
 
 /*********** INFO OH MY FOOD ************/
@@ -104,21 +175,12 @@ header span {
   text-align: center;
   width: 75%;
 }
-#info-ohmyfood a {
-  width: fit-content;
-  align-items: center;
-  background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
-  border-radius: 28px;
-  color: #ffffff;
-  padding: 16px 31px;
-  font-weight: 700;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-}
 
 /*********** FONCTIONNEMENT ************/
 #how-ohmyfood {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2em;
 }
 #how-ohmyfood h2 {
   text-align: left;
@@ -141,18 +203,18 @@ header span {
   border-radius: 20px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
+#how-ohmyfood div:hover {
+  background: rgba(147, 86, 220, 0.2);
+}
 #how-ohmyfood i {
   font-size: 24px;
   margin-right: 1em;
   margin-left: 0.5em;
+  color: black;
 }
 #how-ohmyfood p {
   font-size: 20px;
-  padding-left: 1em;
-}
-#how-ohmyfood :hover {
-  color: #9356dc;
-  opacity: 6;
+  margin-left: 1em;
 }
 
 .number {
@@ -187,7 +249,7 @@ header span {
 }
 #restaurants img {
   width: 100%;
-  height: 11em;
+  height: 16em;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -208,25 +270,22 @@ header span {
   position: relative;
 }
 #restaurants .restaurant-info h3 {
+  font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 8px;
 }
 #restaurants .restaurant-info p {
+  font-size: 1.2em;
   margin-top: 0;
-  font-weight: 200;
 }
 
-.restaurant-info i:hover {
-  background-clip: text;
-  -webkit-text-fill-color: linear-gradient(25Odeg, #9356dc, #ff79da);
-  transition-duration: 0.5s;
-}
-
+/** LIKE **/
 .like-button i {
   position: absolute;
-  font-size: 2em;
+  margin-top: -2em;
+  margin-right: 1rem;
+  font-size: 2.5em;
   right: 1rem;
-  margin-top: -15%;
   cursor: pointer;
 }
 
@@ -243,6 +302,46 @@ header span {
   animation: heart 0.5s linear;
 }
 
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 2em;
+  }
+  .text-info {
+    font-size: larger;
+  }
+  #how-ohmyfood {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-around;
+  }
+  #how-ohmyfood div {
+    width: fit-content;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #how-ohmyfood h2 {
+    width: 100%;
+    text-align: center;
+  }
+  #restaurants {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #restaurants .card-restaurant {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #restaurants h2 {
+    text-align: center;
+  }
+}
+/** BOUTON J'AIME **/
 @keyframes heart {
   0% {
     transform: scale(0);
@@ -251,30 +350,51 @@ header span {
     transform: scale(1);
   }
 }
-/*********** FOOTER ************/
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
+@-webkit-keyframes heart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-footer h4 {
-  color: white;
-  margin-left: 1em;
-  font-size: 28px;
+/** APPARITION DES MENUS **/
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
 }
-footer ul {
-  margin-top: -1em;
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
 }
-footer li {
-  list-style-type: none;
-  color: white;
+/** ANIMATION ADD TO CART **/
+@-webkit-keyframes add-cart {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-footer a {
-  color: white;
-  text-decoration: none;
-}
-footer i {
-  margin-right: 1rem;
+@keyframes add-cart {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

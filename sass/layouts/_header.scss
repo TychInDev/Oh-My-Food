@@ -12,8 +12,32 @@ header {
         border-top: 2px solid #cccccc;
         width: 100%;
         height: 3em;
+        
+        h1 {
+            font-size: 2.5em;
+        }
+        span {
+            margin-left: 1em;
+            font-size: 1.2em;
+            color: black;
+        }
+        i {
+            font-size: 1em;
+            color: black;
+        }
     }
-    span {
-        margin-left: 1em;
+}
+
+@media screen and (min-width: $screen-tablet) {
+   
+}
+@media screen and (min-width: $screen-desktop) {
+  
+     h1 {
+        font-size: 4em;
+    }
+
+    .search-box { 
+        font-size: larger;
     }
 }

@@ -1,154 +1,200 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  overflow: scroll;
+  height: 100vh;
+}
 
 /*********** INFO OH MY FOOD ************/
 
 #info-ohmyfood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+  padding: 2em;
+  .text-info {
+    text-align: center;
+    width: 75%;
+  }
+}
+
+/*********** FONCTIONNEMENT ************/
+
+#how-ohmyfood {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  h2 {
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 1em;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    width: 70%;
+    margin-top: 1rem;
+    margin-left: 12%;
+    margin-bottom: 16px;
+    padding: 1em;
+    position: relative;
+    background: $background-color;
+    border-radius: 20px;
+    box-shadow: $shadow-box;
+    &:hover {
+      background: rgba(147, 86, 220, 0.2);
+    }
+    
+  }
+  i {
+    font-size: 24px;
+    margin-right: 1em;
+    margin-left: 0.5em;
+    color: black;
+  }
+
+  p {
+    font-size: 20px;
+    margin-left: 1em;
+  }
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 1rem;
+  height: 1rem;
+  top: 30%;
+  color: #fff;
+  position: absolute;
+  left: -1em;
+  background: $main-color;
+  border-radius: 100px;
+}
+
+/*********** RESTAURANT ************/
+
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  padding: 2em;
+  .card-restaurant {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    box-shadow: $shadow-box;
+  }
+  img {
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .new {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 8px;
+    color: #288364;
+    background: $tertiary-color;
+    border-radius: 5px;
+  }
+  .restaurant-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: #f2f2f2;
-    padding: 2em;
-  
-    .text-info {
-      text-align: center;
-      width: 75%;
-    }
-  
-    a {
-      width: fit-content;
-      align-items: center;
-      background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
-      border-radius: 28px;
-      color: #ffffff;
-      padding: 16px 31px;
-      font-weight: 700;
-      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  
-    }
+    padding: 16px;
+    position: relative;
+  }
+  .restaurant-info h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .restaurant-info p {
+    font-size: 1.2em;
+    margin-top: 0;
   }
   
-  /*********** FONCTIONNEMENT ************/
-  
+}
+
+/** LIKE **/
+
+.like-button i {
+  position: absolute;
+  margin-top: -2em;
+  margin-right: 1rem;
+  font-size: 2.5em;
+  right: 1rem;
+  cursor: pointer;
+}
+.like-button .like {
+  opacity: 0;
+  background-image: linear-gradient(250deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+.like-button:hover .like {
+  opacity: 1;
+  animation: heart 0.5s linear;
+}
+
+@media screen and (min-width: $screen-desktop) {
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .text-info {
+   font-size: larger;
+  }
+
   #how-ohmyfood {
     display: flex;
-    flex-direction: column;
-  
-    h2 {
-      text-align: left;
-      margin-top: 2em;
-      margin-left: 1em;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-around;
+   
     div {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 3em;
-      width: 70%;
-      margin-top: 1rem;
-      margin-left: 12%;
-      margin-bottom: 16px;
-      padding: 1em;
-      position: relative;
-      background: #f2f2f2;
-      border-radius: 20px;
-      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+      width:fit-content;
+white-space: nowrap;
+margin-left: auto;
+margin-right: auto;
     }
-    i {
-      font-size: 24px;
-      margin-right: 1em;
-      margin-left: 0.5em;
-    }
-  
-    p {
-      font-size: 20px;
-      padding-left: 1em;
-    }
-    :hover {
-      color: #9356dc;
-      opacity: 6;
+    h2 {
+      width: 100%;
+     text-align: center;
     }
   }
-  
-  .number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: 1rem;
-    height: 1rem;
-    top: 30%;
-    color: #fff;
-    position: absolute;
-    left: -1em;
-    background: #9356dc;
-    border-radius: 100px;
-  }
-  
-  /*********** RESTAURANT ************/
-  
   #restaurants {
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
-    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+
     .card-restaurant {
-      margin-bottom: 16px;
-      margin-top: 16px;
-      position: relative;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
-    img {
-      width: 100%;
-      height: 11em;
-      object-fit: cover;
-      border-radius: 15px 15px 0 0;
+
+    h2 {
+      text-align: center;
     }
-    .new {
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      padding: 8px;
-      color: #288364;
-      background: #99e2d0;
-      border-radius: 5px;
-    }
-    .restaurant-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 16px;
-      position: relative;
-      
-    }
-    .restaurant-info h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-    }
-    .restaurant-info p {
-      margin-top: 0;
-      font-weight: 200;
-    }
-    .restaurant-info i {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 2em;
-      height: 2em;
-      position: absolute;
-      right: 1em;
-      background: #fff;
-    }
-  
-    .restaurant-info i:hover{
-      background-clip: text;
-      -webkit-text-fill-color: #9356dc;
-      transition-duration: 0.5s;
-    }
-  
-    .fa-heart {
-      font-size: 1.75rem;
-    }
+    
   }
+}

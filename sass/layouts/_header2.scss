@@ -1,10 +1,31 @@
 header {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    align-items: center;
+
+
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
    a {
         text-decoration: none;
         color: black;
-        margin-right: 3.5em;
-        margin-left: 1em;
+        font-size: 2.5em;
+        margin-left: 16px;
+    }
+}
+
+
+@media screen and (min-width: $screen-desktop) {
+ 
+    h1 {
+        font-size: 4em;
+    }
+
+    .search-box { 
+        font-size: larger;
     }
 }
