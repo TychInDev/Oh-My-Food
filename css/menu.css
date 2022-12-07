@@ -11,7 +11,8 @@
 }
 
 /** FONT RULES **/
-h1, h4 {
+h1,
+h4 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -21,15 +22,14 @@ a {
 }
 
 .button {
-  text-decoration: none;
   width: fit-content;
   align-items: center;
   border-radius: 28px;
-  color: #ffffff;
   padding: 16px 31px;
-  font-weight: 600;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  width: fit-content;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
@@ -111,12 +111,12 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
+  width: 100%;
   margin-top: -4em;
+  border-radius: 35px;
   z-index: 2;
   background-color: white;
-  width: 100%;
-  border-radius: 35px;
+  position: relative;
 }
 .restaurant-title h1 {
   font-size: 2em;
@@ -125,17 +125,17 @@ img {
   margin-left: 1em;
 }
 .restaurant-title div {
-  margin-left: auto;
   font-size: 2em;
+  margin-left: auto;
   margin-right: 1em;
 }
 
 .group-food1 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  flex-direction: column;
   margin-top: 2em;
   animation: slide-top 1s ease-in 1s reverse both;
   opacity: 0;
@@ -144,9 +144,9 @@ img {
 .group-food2 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  flex-direction: column;
   margin-top: 2em;
   animation: slide-top 1s ease-in 2s reverse both;
   opacity: 0;
@@ -155,9 +155,9 @@ img {
 .group-food3 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  flex-direction: column;
   margin-top: 2em;
   animation: slide-top 1s ease-in 3s reverse both;
   opacity: 0;
@@ -174,24 +174,20 @@ h2 {
 
 .card-food {
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  width: 90%;
-  height: 6em;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
+  width: 90%;
+  height: 6em;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   animation: slide-top 1s ease-in 3s reverse both;
-}
-.card-food h3 {
-  font-size: 1.5em;
 }
 .card-food p {
   margin-top: -16px;
-  font-size: larger;
 }
 .card-food:hover {
   cursor: pointer;
@@ -249,20 +245,19 @@ h2 {
 }
 
 .button {
+  width: fit-content;
+  height: auto;
+  align-items: center;
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
-  text-decoration: none;
-  width: fit-content;
-  height: auto;
-  align-items: center;
   border-radius: 28px;
-  color: #ffffff;
   padding: 16px 31px;
+  color: #ffffff;
   font-weight: 600;
+  text-decoration: none;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  width: fit-content;
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
@@ -271,7 +266,7 @@ h2 {
   position: absolute;
   margin-right: 1rem;
   margin-top: -1rem;
-  font-size: 1.5em;
+  font-size: 1.25em;
   right: 1rem;
   cursor: pointer;
 }

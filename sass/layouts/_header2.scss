@@ -1,31 +1,27 @@
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
+  h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    h1 {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-   a {
-        text-decoration: none;
-        color: black;
-        font-size: 2.5em;
-        margin-left: 16px;
-    }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.5em;
+    margin-left: 16px;
+  }
 }
 
-
 @media screen and (min-width: $screen-desktop) {
- 
-    h1 {
-        font-size: 4em;
-    }
+  h1 {
+    font-size: 4em;
+  }
 
-    .search-box { 
-        font-size: larger;
-    }
+  .search-box {
+    font-size: larger;
+  }
 }

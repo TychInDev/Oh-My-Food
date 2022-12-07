@@ -1,19 +1,19 @@
 /** PRIMARY RULES **/
 * {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 100%;
-    font-family: $font-body;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  font-family: $font-body;
 }
 
 /** FONT RULES **/
 
-
-h1, h4 {
-    font-family: $font-title;
+h1,
+h4 {
+  font-family: $font-title;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }

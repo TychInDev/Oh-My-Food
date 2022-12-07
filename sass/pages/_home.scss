@@ -44,14 +44,13 @@ main {
     margin-left: 12%;
     margin-bottom: 16px;
     padding: 1em;
+    border-radius: 20px;
     position: relative;
     background: $background-color;
-    border-radius: 20px;
     box-shadow: $shadow-box;
     &:hover {
       background: rgba(147, 86, 220, 0.2);
     }
-    
   }
   i {
     font-size: 24px;
@@ -70,15 +69,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   width: 1rem;
   height: 1rem;
+  padding: 10px;
+  border-radius: 100px;
   top: 30%;
+  left: -1em;
   color: #fff;
   position: absolute;
-  left: -1em;
   background: $main-color;
-  border-radius: 100px;
 }
 
 /*********** RESTAURANT ************/
@@ -91,9 +90,9 @@ main {
   .card-restaurant {
     margin-bottom: 16px;
     margin-top: 16px;
-    position: relative;
-    background: white;
     border-radius: 15px;
+    background: white;
+    position: relative;
     box-shadow: $shadow-box;
   }
   img {
@@ -107,9 +106,9 @@ main {
     top: 16px;
     right: 16px;
     padding: 8px;
+    border-radius: 5px;
     color: #288364;
     background: $tertiary-color;
-    border-radius: 5px;
   }
   .restaurant-info {
     display: flex;
@@ -127,7 +126,6 @@ main {
     font-size: 1.2em;
     margin-top: 0;
   }
-  
 }
 
 /** LIKE **/
@@ -153,31 +151,30 @@ main {
 }
 
 @media screen and (min-width: $screen-desktop) {
-
   h2 {
     font-size: 2em;
   }
 
   .text-info {
-   font-size: larger;
+    font-size: larger;
   }
 
   #how-ohmyfood {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 100%;
     justify-content: space-around;
-   
+    max-width: 100%;
+
     div {
-      width:fit-content;
-white-space: nowrap;
-margin-left: auto;
-margin-right: auto;
+      width: fit-content;
+      white-space: nowrap;
+      margin-left: auto;
+      margin-right: auto;
     }
     h2 {
       width: 100%;
-     text-align: center;
+      text-align: center;
     }
   }
   #restaurants {
@@ -195,6 +192,5 @@ margin-right: auto;
     h2 {
       text-align: center;
     }
-    
   }
 }

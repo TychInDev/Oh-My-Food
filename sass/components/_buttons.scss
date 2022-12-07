@@ -1,13 +1,12 @@
 .button {
-  text-decoration: none;
   width: fit-content;
   align-items: center;
   border-radius: 28px;
-  color: #ffffff;
   padding: 16px 31px;
-  font-weight: 600;
   box-shadow: $shadow-box;
-  width: fit-content;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
   background: linear-gradient(
     to bottom,
     #ff79da,

@@ -10,12 +10,12 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
+  width: 100%;
   margin-top: -4em;
+  border-radius: 35px;
   z-index: 2;
   background-color: white;
-  width: 100%;
-  border-radius: 35px;
+  position: relative;
   h1 {
     font-size: 2em;
     text-align: left;
@@ -23,8 +23,8 @@ img {
     margin-left: 1em;
   }
   div {
-    margin-left: auto;
     font-size: 2em;
+    margin-left: auto;
     margin-right: 1em;
   }
 }
@@ -32,9 +32,9 @@ img {
 .group-food1 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  flex-direction: column;
   margin-top: 2em;
   animation: slide-top 1s ease-in 1s reverse both;
   opacity: 0;
@@ -42,9 +42,9 @@ img {
 .group-food2 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  flex-direction: column;
   margin-top: 2em;
   animation: slide-top 1s ease-in 2s reverse both;
   opacity: 0;
@@ -52,9 +52,9 @@ img {
 .group-food3 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  flex-direction: column;
   margin-top: 2em;
   animation: slide-top 1s ease-in 3s reverse both;
   opacity: 0;
@@ -71,25 +71,23 @@ h2 {
 
 .card-food {
   display: flex;
-  overflow: hidden;
   justify-content: center;
-  width: 90%;
-  height: 6em;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: $shadow-box;
   margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
+  width: 90%;
+  height: 6em;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: $shadow-box;
   animation: slide-top 1s ease-in 3s reverse both;
 
   h3 {
-    font-size: 1.5em;
   }
 
   p {
     margin-top: -16px;
-    font-size: larger;
   }
   &:hover {
     cursor: pointer;
@@ -147,20 +145,19 @@ h2 {
 }
 
 .button {
+  width: fit-content;
+  height: auto;
+  align-items: center;
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
-  text-decoration: none;
-  width: fit-content;
-  height: auto;
-  align-items: center;
   border-radius: 28px;
-  color: #ffffff;
   padding: 16px 31px;
+  color: #ffffff;
   font-weight: 600;
+  text-decoration: none;
   box-shadow: $shadow-box;
-  width: fit-content;
   background: linear-gradient(
     to bottom,
     #ff79da,
@@ -177,7 +174,7 @@ h2 {
   position: absolute;
   margin-right: 1rem;
   margin-top: -1rem;
-  font-size: 1.5em;
+  font-size: 1.25em;
   right: 1rem;
   cursor: pointer;
 }

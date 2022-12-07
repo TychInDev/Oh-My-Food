@@ -11,7 +11,8 @@
 }
 
 /** FONT RULES **/
-h1, h4 {
+h1,
+h4 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -33,13 +34,13 @@ a {
 }
 
 .loading-circle {
+  display: inline-block;
   width: 10em;
   height: 10em;
-  display: inline-block;
-  border: 16px solid #F2F2F2;
-  border-top: 16px solid #9356DC;
-  border-right: 16px solid #FF79DA;
-  border-bottom: 16px solid #99E2D0;
+  border: 16px solid #f2f2f2;
+  border-top: 16px solid #9356dc;
+  border-right: 16px solid #ff79da;
+  border-bottom: 16px solid #99e2d0;
   border-radius: 50%;
   animation: loadingcircle 2s linear infinite;
 }
@@ -63,15 +64,14 @@ a {
   }
 }
 .button {
-  text-decoration: none;
   width: fit-content;
   align-items: center;
   border-radius: 28px;
-  color: #ffffff;
   padding: 16px 31px;
-  font-weight: 600;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  width: fit-content;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
 
@@ -198,9 +198,9 @@ main {
   margin-left: 12%;
   margin-bottom: 16px;
   padding: 1em;
+  border-radius: 20px;
   position: relative;
   background: #f2f2f2;
-  border-radius: 20px;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 #how-ohmyfood div:hover {
@@ -221,15 +221,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   width: 1rem;
   height: 1rem;
+  padding: 10px;
+  border-radius: 100px;
   top: 30%;
+  left: -1em;
   color: #fff;
   position: absolute;
-  left: -1em;
   background: #9356dc;
-  border-radius: 100px;
 }
 
 /*********** RESTAURANT ************/
@@ -242,9 +242,9 @@ main {
 #restaurants .card-restaurant {
   margin-bottom: 16px;
   margin-top: 16px;
-  position: relative;
-  background: white;
   border-radius: 15px;
+  background: white;
+  position: relative;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 #restaurants img {
@@ -258,9 +258,9 @@ main {
   top: 16px;
   right: 16px;
   padding: 8px;
+  border-radius: 5px;
   color: #288364;
   background: #99e2d0;
-  border-radius: 5px;
 }
 #restaurants .restaurant-info {
   display: flex;
@@ -313,8 +313,8 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 100%;
     justify-content: space-around;
+    max-width: 100%;
   }
   #how-ohmyfood div {
     width: fit-content;
