@@ -179,17 +179,19 @@ main {
   }
   #restaurants {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 
-    .card-restaurant {
-      width: 50%;
+   a {
+      height: auto;
+      width: 45%;
       margin-left: auto;
       margin-right: auto;
     }
 
     h2 {
+      width: 100%;
       text-align: center;
     }
   }

@@ -210,6 +210,7 @@ h2 {
 }
 .card-food .fa-circle-check {
   color: white;
+  animation: add-cart 1s infinite 1s both;
 }
 .card-food .food-icons {
   display: flex;
@@ -219,11 +220,12 @@ h2 {
   margin-right: -4em;
   font-size: 1.5em;
   background-color: #99e2d0;
-  transition: all 0.7s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.card-food:hover .fa-circle-check {
-  animation: add-cart 1s ease 0s 1 alternate-reverse forwards;
+.fa-circle-check:hover {
+  animation: add-cart 1s infinite 1s both;
+  /* animation: add-cart 2s ease 0s 1 alternate-reverse; */
 }
 
 .card-food:hover .food-icons {
@@ -248,13 +250,16 @@ h2 {
 }
 
 .button {
+  display: flex;
   width: fit-content;
   height: auto;
   align-items: center;
+  justify-content: center;
   margin-top: 2em;
+  margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  font-size: 2em;
   border-radius: 28px;
   padding: 16px 31px;
   color: #ffffff;
@@ -289,10 +294,17 @@ h2 {
 
 @media screen and (min-width: 992px) {
   .restaurant {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  .restaurant section {
+    width: 33%;
+  }
+  .restaurant-title {
+    width: 100%;
   }
   img {
     height: 30em;
@@ -350,10 +362,10 @@ h2 {
 }
 @keyframes add-cart {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 

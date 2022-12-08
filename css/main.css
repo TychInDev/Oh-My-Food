@@ -328,16 +328,18 @@ main {
   }
   #restaurants {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
-  #restaurants .card-restaurant {
-    width: 50%;
+  #restaurants a {
+    height: auto;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
   }
   #restaurants h2 {
+    width: 100%;
     text-align: center;
   }
 }
@@ -390,10 +392,10 @@ main {
 }
 @keyframes add-cart {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 
