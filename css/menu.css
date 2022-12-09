@@ -179,7 +179,7 @@ h2 {
   margin-left: 2em;
   margin-right: 2em;
   width: 90%;
-  height: 6em;
+  height: auto;
   border-radius: 15px;
   overflow: hidden;
   background-color: white;
