@@ -187,9 +187,10 @@ h2 {
   animation: slide-top 1s ease-in 3s reverse both;
 }
 .card-food h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 .card-food p {
+  font-size: 1.25em;
   margin-top: -1rem;
 }
 .card-food:hover {
@@ -225,7 +226,6 @@ h2 {
 
 .fa-circle-check:hover {
   animation: add-cart 1s infinite 1s both;
-  /* animation: add-cart 2s ease 0s 1 alternate-reverse; */
 }
 
 .card-food:hover .food-icons {
