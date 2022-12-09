@@ -293,24 +293,32 @@ h2 {
 }
 
 @media screen and (min-width: 992px) {
-  .restaurant {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  }
-  .restaurant section {
-    width: 33%;
+  img {
+    height: 30em;
   }
   .restaurant-title {
     width: 100%;
   }
-  img {
-    height: 30em;
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  .restaurant section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: -1em;
+  }
+  .restaurant section h2 {
+    width: 100%;
   }
   .button {
     font-size: 2em;
+    order: 3;
   }
 }
 /** BOUTON J'AIME **/

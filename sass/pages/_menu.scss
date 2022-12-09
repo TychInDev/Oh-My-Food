@@ -197,24 +197,32 @@ h2 {
 }
 
 @media screen and (min-width: $screen-desktop) {
-  .restaurant {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    box-shadow: $shadow-box;
-  }
-  .restaurant section {
-    width: 33%;
+  img {
+    height: 30em;
   }
   .restaurant-title {
     width: 100%;
   }
-  img {
-    height: 30em;
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-shadow: $shadow-box;
+  }
+  .restaurant section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: -1em;
+  }
+  .restaurant section h2 {  
+    width: 100%;
   }
 
   .button {
     font-size: 2em;
+    order: 3;
   }
 }
