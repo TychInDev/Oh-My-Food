@@ -147,7 +147,7 @@ main {
 }
 .like-button:hover .like {
   opacity: 1;
-  animation: heart 0.5s linear;
+  animation: fill-heart 0.5s linear;
 }
 
 @media screen and (min-width: $screen-desktop) {
@@ -167,7 +167,7 @@ main {
     max-width: 100%;
 
     div {
-      width: fit-content;
+      width: 20em;
       white-space: nowrap;
       margin-left: auto;
       margin-right: auto;

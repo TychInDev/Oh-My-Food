@@ -32,6 +32,9 @@ a {
   color: #ffffff;
   background: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 }
+.button:hover {
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.4);
+}
 
 header {
   display: flex;
@@ -289,7 +292,7 @@ h2 {
 
 .like-button:hover .like {
   opacity: 1;
-  animation: heart 0.5s linear;
+  animation: fill-heart 0.5s linear;
 }
 
 @media screen and (min-width: 992px) {
@@ -322,7 +325,7 @@ h2 {
   }
 }
 /** BOUTON J'AIME **/
-@keyframes heart {
+@keyframes fill-heart {
   0% {
     transform: scale(0);
   }
@@ -330,7 +333,7 @@ h2 {
     transform: scale(1);
   }
 }
-@-webkit-keyframes heart {
+@-webkit-keyframes fill-heart {
   0% {
     transform: scale(0);
   }

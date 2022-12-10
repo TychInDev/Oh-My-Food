@@ -193,7 +193,7 @@ h2 {
 }
 .like-button:hover .like {
   opacity: 1;
-  animation: heart 0.5s linear;
+  animation: fill-heart 0.5s linear;
 }
 
 @media screen and (min-width: $screen-desktop) {
