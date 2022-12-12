@@ -40,21 +40,4 @@
   }
 }
 
-/** ANIMATION ADD TO CART **/
 
-@-webkit-keyframes add-cart {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes add-cart {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}

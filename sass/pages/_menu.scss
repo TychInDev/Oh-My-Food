@@ -76,7 +76,7 @@ h2 {
   margin-left: 2em;
   margin-right: 2em;
   width: 90%;
-  height: auto;
+  height: 5em;
   border-radius: 15px;
   overflow: hidden;
   background-color: white;
@@ -110,8 +110,12 @@ h2 {
   }
   .fa-circle-check {
     color: white;
-    animation: add-cart 1s infinite 1s both;
+    transition: transform 1s;
   }
+  .food-icons:hover .fa-circle-check {
+    transform: rotate(360deg);
+  }
+  
   .food-icons {
     display: flex;
     justify-content: center;
@@ -122,10 +126,6 @@ h2 {
     background-color: $tertiary-color;
     transition: all 1s ease-in-out; 
   }
-}
-
-.fa-circle-check:hover {
-  animation: add-cart 1s infinite 1s both;
 }
 
 .card-food:hover .food-icons {
@@ -226,3 +226,4 @@ h2 {
     order: 3;
   }
 }
+

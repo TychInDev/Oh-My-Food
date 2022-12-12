@@ -182,7 +182,7 @@ h2 {
   margin-left: 2em;
   margin-right: 2em;
   width: 90%;
-  height: auto;
+  height: 5em;
   border-radius: 15px;
   overflow: hidden;
   background-color: white;
@@ -214,7 +214,10 @@ h2 {
 }
 .card-food .fa-circle-check {
   color: white;
-  animation: add-cart 1s infinite 1s both;
+  transition: transform 1s;
+}
+.card-food .food-icons:hover .fa-circle-check {
+  transform: rotate(360deg);
 }
 .card-food .food-icons {
   display: flex;
@@ -225,10 +228,6 @@ h2 {
   font-size: 1.5em;
   background-color: #99e2d0;
   transition: all 1s ease-in-out;
-}
-
-.fa-circle-check:hover {
-  animation: add-cart 1s infinite 1s both;
 }
 
 .card-food:hover .food-icons {
@@ -360,23 +359,6 @@ h2 {
   100% {
     transform: translateY(-100px);
     opacity: 0;
-  }
-}
-/** ANIMATION ADD TO CART **/
-@-webkit-keyframes add-cart {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes add-cart {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
