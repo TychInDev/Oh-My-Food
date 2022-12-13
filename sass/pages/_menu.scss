@@ -229,3 +229,16 @@ h2 {
   }
 }
 
+@media screen and (min-width: $screen-tablet) {
+
+  .restaurant {
+    width: 100%;
+  }
+.restaurant section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+  
+}

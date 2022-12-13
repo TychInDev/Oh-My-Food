@@ -325,6 +325,17 @@ h2 {
     order: 3;
   }
 }
+@media screen and (min-width: 768px) {
+  .restaurant {
+    width: 100%;
+  }
+  .restaurant section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
 /** BOUTON J'AIME **/
 @keyframes fill-heart {
   0% {
