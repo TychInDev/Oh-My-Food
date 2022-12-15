@@ -232,6 +232,7 @@ h2 {
   align-items: center;
   width: 4em;
   margin-right: -4em;
+  margin-left: auto;
   font-size: 1.5em;
   background-color: #99e2d0;
   transition: all 1s ease-in-out;
