@@ -45,6 +45,7 @@ main {
     margin-bottom: 16px;
     padding: 1em;
     border-radius: 20px;
+    white-space: nowrap;
     position: relative;
     background: $background-color;
     box-shadow: $shadow-box;
@@ -54,14 +55,14 @@ main {
   }
   i {
     font-size: 24px;
-    margin-right: 1em;
+    margin-right: 0.5em;
     margin-left: 0.5em;
     color: black;
   }
 
   p {
     font-size: 20px;
-    margin-left: 1em;
+    margin-left: 0.5em;
   }
 }
 
@@ -194,5 +195,20 @@ main {
       width: 100%;
       text-align: center;
     }
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  #how-ohmyfood {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+   div {
+    margin-left: 1em;
+    margin-right: 1em;
+    }
+   
   }
 }

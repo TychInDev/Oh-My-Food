@@ -17,7 +17,7 @@ img {
   background-color: white;
   position: relative;
   h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     text-align: left;
     margin-top: 1em;
     margin-left: 1em;
@@ -71,45 +71,51 @@ h2 {
 
 .card-food {
   display: flex;
-  justify-content: center;
-  margin-top: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  flex-direction: row;
   width: 90%;
   height: 5em;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 15px;
   overflow: hidden;
+  text-overflow: ellipsis;
   background-color: white;
   box-shadow: $shadow-box;
   animation: slide-top 1s ease-in 3s reverse both;
 
   h3 {
     font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
   }
 
   p {
     font-size: 14px;
     margin-top: -0.5rem;
-    margin-bottom: 1em; 
-    margin-right: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
   }
   &:hover {
     cursor: pointer;
   }
   .food-details {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 85%;
     margin-left: 1em;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .food-price {
-    margin-left: auto;
-    margin-right: 1em;
+    display: flex;
+    justify-content: flex-end;
     margin-top: auto;
+    margin-right: 0.5em;
+    margin-left: 0.5em; 
   }
+
   .fa-circle-check {
     color: white;
     transition: transform 1s;
@@ -117,7 +123,7 @@ h2 {
   .food-icons:hover .fa-circle-check {
     transform: rotate(360deg);
   }
-  
+
   .food-icons {
     display: flex;
     justify-content: center;
@@ -126,7 +132,7 @@ h2 {
     margin-right: -4em;
     font-size: 1.5em;
     background-color: $tertiary-color;
-    transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out;
   }
 }
 
@@ -199,6 +205,9 @@ h2 {
 }
 
 @media screen and (min-width: $screen-desktop) {
+  * {
+    max-width: 100%;
+  }
   img {
     height: 30em;
   }
@@ -211,15 +220,18 @@ h2 {
     flex-wrap: nowrap;
     width: 100%;
     box-shadow: $shadow-box;
+
   }
   .restaurant section {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: nowrap;
     width: 100%;
     margin-top: -1em;
+
   }
-  .restaurant section h2 {  
+  .restaurant section h2 {
     width: 100%;
   }
 
@@ -227,18 +239,47 @@ h2 {
     font-size: 2em;
     order: 3;
   }
+  .food-icons {
+    margin-left: auto;
+  }
+  .card-food {
+   margin-right: 1em;
+
+  }
 }
 
 @media screen and (min-width: $screen-tablet) {
-
   .restaurant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-shadow: $shadow-box;
+  }
+  .restaurant section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: -1em;
+  }
+  .restaurant section h2 {
     width: 100%;
   }
-.restaurant section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-  
+  .button {
+    font-size: 2em;
+    order: 3;
+  }
+  .food-icons {
+    margin-left: auto;
+  }
+  .food-price {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .card-food {
+    width: 40%;
+    margin-left: 1em;
+  }
 }

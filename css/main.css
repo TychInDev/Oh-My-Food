@@ -202,6 +202,7 @@ main {
   margin-bottom: 16px;
   padding: 1em;
   border-radius: 20px;
+  white-space: nowrap;
   position: relative;
   background: #f2f2f2;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
@@ -211,13 +212,13 @@ main {
 }
 #how-ohmyfood i {
   font-size: 24px;
-  margin-right: 1em;
+  margin-right: 0.5em;
   margin-left: 0.5em;
   color: black;
 }
 #how-ohmyfood p {
   font-size: 20px;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 
 .number {
@@ -344,6 +345,18 @@ main {
   #restaurants h2 {
     width: 100%;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  #how-ohmyfood {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #how-ohmyfood div {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 /** BOUTON J'AIME **/
