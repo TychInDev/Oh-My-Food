@@ -354,6 +354,9 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  #how-ohmyfood h2 {
+    width: 100%;
+  }
   #how-ohmyfood div {
     margin-left: 1em;
     margin-right: 1em;
